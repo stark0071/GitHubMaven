@@ -28,7 +28,9 @@ public class LoginTest {
         WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-name")));
         WebElement password = driver.findElement(By.id("password"));
 
+        //user-name
         username.sendKeys("standard_user");
+        //password
         password.sendKeys("secret_sauce");
 
         driver.findElement(By.id("login-button")).click();
